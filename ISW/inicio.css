@@ -1,0 +1,158 @@
+
+/***********************************************************************************************/
+/* Estilos generales */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/***********************************************************************************************/
+/* Estilo para la sección de contacto en la barra inferior */
+.contacto {
+    background-color: #333; /* Fondo negro */
+    color: white; /* Texto blanco o el color que desees */
+    padding: 10px; /* Espaciado interno para el contenido */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/***********************************************************************************************/
+/* Estilos de las secciones */
+section {
+    display: none;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/***********************************************************************************************/
+/* Estilos de la sección activa */
+section.active {
+    display: block;
+}
+
+
+/***********************************************************************************************/
+/* Estilos para los recuadros de exposiciones */
+.exposicion {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.exposicion .imagen {
+    flex: 1;
+}
+
+.exposicion .descripcion {
+    flex: 2;
+    padding: 10px;
+}
+
+.exposicion .descripcion h3 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.exposicion .descripcion p {
+    font-size: 17px;
+}
+
+/* Ocultar descripción extendida por defecto */
+.descripcion-extendida {
+    display: none;
+}
+
+/***********************************************************************************************/
+/* Estilo para el botón "Explorar" */
+.explorar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+}
+
+/* Estilos para la calificación */
+.calificacion {
+    color: #f1c40f; /* Color de las estrellas (amarillo) */
+    margin-top: 10px; /* Espaciado superior */
+    font-size: 20px; /* Tamaño de fuente de las estrellas */
+}
+
+/* Estilos para la estrella llena */
+.fa-star.checked {
+    color: #f1c40f;
+}
+
+/***********************************************************************************************/
+/* Estilos para el calendario */
+.calendario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mes-actual {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dias-semana {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dias-semana div {
+    width: 14.28%; /* Ancho igualmente dividido para 7 días */
+}
+
+.dias-mes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.dias-mes div {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.cerrado {
+    text-decoration: line-through;
+    color: red;
+}
+
+/***********************************************************************************************/

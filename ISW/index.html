@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="inicio.css">
+    <title>Museo Virtual</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/inicio.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Museo Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="inicio">Inicio</a></li>
+                <li><a href="#" id="exposiciones">Exposiciones</a></li>
+                <li><a href="#" id="horario">Horario</a></li>
+                <li><a href="#" id="iniciar-sesion"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio-section">
+            <h2>¡Bienvenido al Museo Virtual!</h2>
+            <p>Explora nuestras increíbles exposiciones en línea.</p>
+        </section>
+        <section id="exposiciones-section">
+            <h2>Exposiciones</h2>
+            <div class="exposicion">
+                <div class="imagen">
+                    <img src="IMG/Presentacion2daGuerra.jpg" alt="Exposición 1" width="606" height="425">
+
+                </div>
+                <div class="descripcion">
+                    <h3>"Testigos del Pasado: La Segunda Guerra Mundial en Fotografías"</h3>
+                    <p>
+                        En esta inmersiva exposición, te invitamos a sumergirte en el impactante escenario de la Segunda Guerra Mundial a través de las conmovedoras imágenes capturadas por valientes fotógrafos que estuvieron en la primera línea del frente de batalla y en los rincones más íntimos de los hogares. Cada instantánea se convierte en un testimonio visual de coraje, sacrificio y la inquebrantable resistencia de aquellos que vivieron en medio de la tormenta de un conflicto global sin precedentes.
+                    </p>
+                    <p>
+                        Cada fotografía es una ventana al pasado, una ventana que nos permite contemplar la realidad cruda de una época que cambió el curso de la historia mundial. A medida que exploras esta exposición, te sumergirás en las experiencias cotidianas de personas comunes que se convirtieron en héroes inadvertidos. Desde el frente de batalla hasta los hogares afectados por la guerra, estas imágenes capturan la verdadera esencia de una era de desafíos, solidaridad y esperanza.
+                    </p>
+                    <p>
+                        Cada imagen te narrará su propia historia, revelando detalles conmovedores, gestos de humanidad y momentos de lucha. Desde las trincheras a las calles de las ciudades bombardeadas, estas fotografías se convierten en ventanas al pasado que nos transportan a los días en que el mundo enfrentó su mayor prueba. A medida que contemplas estas imágenes, podrás apreciar no solo el valor de quienes las capturaron, sino también el valor y la fortaleza de aquellos que se encuentran en cada fotograma.
+                    </p>
+                    <p>
+                        Esta exposición es un tributo a la memoria de aquellos que vivieron y lucharon en la Segunda Guerra Mundial, un recordatorio de la resiliencia humana en tiempos de adversidad. Cada imagen congelada en el tiempo es un homenaje a la indomable fuerza del espíritu humano y a la esperanza que sigue ardiendo en medio de la oscuridad. Te invitamos a explorar esta colección única de fotografías, a sumergirte en la historia y a conectarte con los corazones y las vidas que han dejado una huella imborrable en nuestro mundo.
+                    </p>
+                    
+                    <div class="calificacion">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+
+                        <button class="explorar">Explorar</button>
+                    </div>
+    
+                </div>
+            </div>
+        
+            <!-- Repite este bloque para cada exposición -->
+        </section>
+        <section id="horario-section">
+            <h2>Horario de Visitas</h2>
+            <div class="calendario">
+                <div class="mes-actual">
+                    <span id="mes"></span>
+                    <span id="anio"></span>
+                </div>
+                <div class="dias-semana">
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mié</div>
+                    <div>Jue</div>
+                    <div>Vie</div>
+                    <div>Sáb</div>
+                    <div>Dom</div>
+                </div>
+                <div class="dias-mes" id="calendario"></div>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Correo: info@museovirtual.com</p>
+            <p>Dirección: Calle Museo, Ciudad Virtual</p>
+        </div>
+    </footer>
+</body>
+</html>
